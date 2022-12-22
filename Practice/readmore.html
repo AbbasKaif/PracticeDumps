@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function showing() {
+				var x = document.getElementById("withtag");
+				var y = document.getElementById("notage_readmore");
+				var z = document.getElementById("notag");
+				if(x.style.display == "none") {
+					x.style.display = "block";
+					y.style.display = "none";
+					z.style.display = "none";
+				}
+			}
+			
+			function hiding() {
+				var x = document.getElementById("withtag");
+				var y = document.getElementById("notage_readmore");
+				var z = document.getElementById("notag");
+				if(x.style.display == "block") {
+					x.style.display = "none";
+					y.style.display = "inline-block";
+					z.style.display = "block";
+				}
+			} 
+		</script>
+	</head>
+	<body>
+		<p id="notag">Kaif Abbas, can be found siting engrossed in some remote thoughts by some window, watching stars and night. He is a student of computer science and engineering and a resident of Lucknow- the city known of its peaceful aura. He views that- life can be changing and events that happen in life are there for some purpose. He finds it easy to express his thoughts through poetry and creativity. He is also into writing academic books in luicd style to make students comfortable with the subject. He writes those books for his loving students and his juniors.Kaif Abbas, enjoys watching how rain-drops fal
+		
+		<a href="#" id="notage_readmore" onclick="showing();">Read More...</a></p>
+		
+		<span id="withtag" style="display:none">
+			<p>Kaif Abbas, can be found siting engrossed in some remote thoughts by some window, watching stars and night. He is a student of computer science and engineering and a resident of Lucknow- the city known of its peaceful aura. He views that- life can be changing and events that happen in life are there for some purpose. He finds it easy to express his thoughts through poetry and creativity. He is also into writing academic books in luicd style to make students comfortable with the subject. He writes those books for his loving students and his juniors.<br><br>Kaif Abbas, enjoys watching how rain-drops fall, the sounds of winds gushing, the voices of vechicles at the night, the yellow-red street lights, foggy nights, stary nights, watching birds return back home, flashes from airplanes in night skies, patterns in skies, voices of train passing by or a plane taking off in a winter evening over a small cup of tea.<br><br>He is fond of conversation on matters that are too simple yet deep. He can be at times seen listening to melodies of gone times or doting over shayaris. When not around anyone, he is having a talk with his thoughts. His pen is writing down words that flow from heart on paper- making unearasable marks on it. As you read through his writings and poems, you are going to cherish every word of it and find yourself in a whirlpool of heart-felt emotions.</p>
+			
+			<a href="#" id="withtag_readless" onclick="hiding();">Read Less...</a>
+		</span>
+	</body>
+</html>

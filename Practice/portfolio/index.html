@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<style>
+			section {
+				width: 100%;
+				height: auto;
+				margin: 50px auto;
+				text-align: center;
+			}
+
+			section label {
+				width: 175px;
+				padding: 10px 2px;
+				margin-left: 10px;
+				margin-bottom: 15px;
+				display: block;
+				float: left;
+				color: #000;
+				font-family: 'Arial';
+				text-align:center;
+				cursor: pointer;
+				border-radius: 25px;
+				border: 1px solid #000;
+			}
+
+			#galeria img {
+				float: left;
+				width:250px;
+				padding: 15px;
+				transition: all .4s;
+			}
+
+			input:checked + label {
+				background-color: #000;
+				color: #FFF;
+			}
+
+			input {
+			 display: none;
+			} 
+
+			#bt_poetry:checked ~ #galeria .academics,
+			#bt_poetry:checked ~ #galeria .app {
+				 opacity: .4;
+				 transform: scale(0.5);
+			}
+
+			#bt_academics:checked ~ #galeria .poetry,
+			#bt_academics:checked ~ #galeria .app {
+				opacity: .4;
+				transform: scale(0.5);
+			}
+
+			#bt_app:checked ~ #galeria .poetry,
+			#bt_app:checked ~ #galeria .academics{
+				opacity: .4;
+				transform: scale(0.5);
+			}
+		</style>
+	</head>
+		<body>
+			<section>
+				<input type="radio" name="bt" id="bt_todos" checked/>
+				<label for="bt_todos">All</label>
+				
+				<input type="radio" name="bt" id="bt_poetry"/>
+				<label for="bt_poetry">Poetry</label>
+				
+				<input type="radio" name="bt" id="bt_academics"/>
+				<label for="bt_academics">Academics</label>
+				
+				<!--
+				<input type="radio" name="bt" id="bt_app"/>
+				<label for="bt_app">APP</label>
+				-->
+				
+				<div id="galeria">
+					<!-- <img src="https://goo.gl/LRRCWS" alt="App" height="200" class="app"/> -->
+					<img src="https://kaifabbas.weebly.com/uploads/1/2/7/0/127079342/published/2.png" alt="Sirr-e-Nihaan" height="360" class="poetry"/>
+					<img src="https://kaifabbas.weebly.com/uploads/1/2/7/0/127079342/published/51223-frontcover-7564340783289898.png" alt="Sirr-e-Ulfat" height="360" class="poetry"/>
+					<img src="https://kaifabbas.weebly.com/uploads/1/2/7/0/127079342/published/642352469.php" alt="Practice Java Programming" height="360" class="academics"/>
+					<img src="https://kaifabbas.weebly.com/uploads/1/2/7/0/127079342/editor/41229-frontcover-591369361151.png" alt="Data Structures Using C" height="360" class="academics"/>
+					<!-- <img src="https://goo.gl/N9po8n" alt="App" height="200" class="app"/> -->
+				</div>
+			</section>
+		</body>
+</html>
